@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uplift - Community Forum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Uplift</h1>
+                <p>Your mental wellbeing, our priority</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="self-assessment.html">Self-Assessment</a></li>
+                <li><a href="forum.html" class="active">Community Forum</a></li>
+                <li><a href="director.html">Professional Director</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="community-forum">
+            <h2>Community Forum</h2>
+            <p>Welcome to the Uplift Community Forum! Share your experiences and support others on their mental health journeys.</p>
+            
+            <form id="postForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="postContent">Your Post:</label>
+                <textarea id="postContent" name="postContent" rows="4" required></textarea>
+
+                <button type="submit" id="postBtn">Post</button>
+            </form>
+
+            <div id="forumPosts">
+                <h3>Recent Posts:</h3>
+                <ul id="postList">
+                    <li class="post">
+                        <div class="post-header">
+                            <strong>JaneDoe</strong>
+                            <span class="like-count">❤️ 5 Likes</span>
+                        </div>
+                        <p>This is an example of a forum post. Let’s support each other on our mental health journeys!</p>
+                        <button class="like-btn">Like</button>
+                        <div class="comments">
+                            <h4>Comments:</h4>
+                            <ul class="comment-list">
+                                <li>
+                                    <strong>JohnDoe:</strong>
+                                    <p>Thank you for sharing this!</p>
+                                </li>
+                            </ul>
+                            <form class="comment-form">
+                                <input type="text" placeholder="Add a comment..." required>
+                                <button type="submit">Comment</button>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- Add more posts dynamically -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Uplift. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

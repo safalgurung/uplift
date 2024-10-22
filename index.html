@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uplift - Welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add this for Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Full page background image */
+        .background {
+            background-image: url('background-download(1).jpeg'); /* Replace with your background image path */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: white;
+        }
+
+        /* Overlay to darken background */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6); /* Darken the background */
+        }
+
+        /* Content container */
+        .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        /* Uplift title styling */
+        .content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        /* Login and Signup buttons */
+        .content .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .content button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .content .login-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .content .login-btn:hover {
+            background-color: #45a049;
+        }
+
+        .content .signup-btn {
+            background-color: #008CBA;
+            color: white;
+        }
+
+        .content .signup-btn:hover {
+            background-color: #007bb5;
+        }
+
+        /* Footer at the bottom */
+        footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background">
+        <div class="overlay"></div>
+
+        <div class="content">
+            <h1>Uplift</h1>
+            <p>Your Mental Wellbeing, Our Priority</p>
+
+            <div class="btn-container">
+                <button class="login-btn" id="loginBtn">Login</button>
+                <button class="signup-btn" id="signupBtn">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Uplift. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("loginBtn").addEventListener("click", function() {
+            window.location.href = "login.html";
+        });
+
+        document.getElementById("signupBtn").addEventListener("click", function() {
+            window.location.href = "signup.html";
+        });
+    </script>
+
+</body>
+</html>
